@@ -3,28 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
+    <title>Document</title>
     <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section class="form-login">
-      <h5>login</h5>
-      <input
-        class="controls"
-        type="text"
-        name="usariario"
-        value=""
-        placeholder="usuario"
-      />
-      <input
-        class="controls"
-        type="password"
-        name="contraseña"
-        value=""
-        placeholder="contraseña"
-      />
-      <button class="buttons">Enviar</button>
-      <p><a href="../registro/registro.htm"> ¿Quieres Registrarte?</a></p>
-    </section>
+    <div class="wrapper">
+      <form action="">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" required />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Password" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox" /> Remember me </label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <div class="register-link">
+          <p>
+            Don't have an account?
+            <a href="../registro/registro.htm">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
